@@ -1,0 +1,18 @@
+group 'com.github.mikan'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin:'application'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('io.reactivex:rxjavafx:2.0.2')
+    testCompile('junit:junit:4.12')
+}
+
+mainClassName = "com.github.mikan.jrd.DemoApp"
